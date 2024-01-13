@@ -1,0 +1,7 @@
+{
+  "name": "DataLansiaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

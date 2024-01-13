@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data Lansia Kelurahan Pabahanan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card-header>
+    <ion-card-title>Tambah Data Lansia Baru</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)] ="data_baru.nama" label="Nama" labelPlacement="stacked" placeholder="Nama Lengkap"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input [(ngModel)] ="data_baru.tempat_lahir" label="Tempat Lahir" labelPlacement="stacked" placeholder="Tempat Lahir"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Tanggal Lahir</ion-label>
+        <ion-input [(ngModel)] ="data_baru.tanggal_lahir" type="date" placeholder="Pilih Tanggal Lahir"></ion-input>
+      </ion-item>      
+      <ion-item>
+        <ion-input [(ngModel)] ="data_baru.alamat" label="Alamat" labelPlacement="stacked" placeholder="Alamat"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)] ="data_baru.umur" label="Umur" labelPlacement="stacked" placeholder="Umur"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)] ="data_baru.status_" label="Status" labelPlacement="stacked" placeholder="Janda/Duda/Bersuami/Beristri"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <ion-button (click)="kembali()">Kembali</ion-button> 
+    <ion-button (click)="tambah_data()">Tambah Data</ion-button> 
+  </ion-card-content>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data Lansia Kelurahan Pabahanan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Detail Data Lansia</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Nama Lengkap : {{data_lansia.nama}}
+    </ion-card-content>
+
+    <ion-card-content>
+      Tempat, Tanggal Lahir : {{data_lansia.tempat_lahir}}, {{data_lansia.tanggal_lahir | date:'dd MMMM yyyy'}}
+    </ion-card-content>
+
+    <ion-card-content>
+      Alamat : {{data_lansia.alamat}}
+    </ion-card-content>
+
+    <ion-card-content>
+      Umur : {{data_lansia.umur}} Tahun
+    </ion-card-content>
+    
+    <ion-card-content>
+      Status : {{data_lansia.status_}}
+    </ion-card-content>
+      
+      <ion-button (click)="kembali()">Kembali</ion-button> 
+  </ion-card>
+</ion-content>
